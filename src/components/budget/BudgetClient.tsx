@@ -183,7 +183,7 @@ export function BudgetClient({ accounts }: { accounts: any[] }) {
                     if (v === 'custom') {
                       setIsCustomCategory(true)
                       setCategory('custom')
-                    } else {
+                    } else if (v) {
                       setCategory(v)
                     }
                   }}>
